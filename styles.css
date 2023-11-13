@@ -10,6 +10,9 @@
 
     --fs-body: 15px;
 
+    --ff-primary: 'Big Shoulders Display', cursive;
+    --ff-secondary: 'Lexend Deca', sans-serif;
+
 }
 
 @media (min-width: 375px) {
@@ -21,13 +24,13 @@
 @font-face {
     font-family: Lexend Deca;
     font-weight: 400;
-    src: url(https://fonts.google.com/specimen/Lexend+Deca);
+    src: url("https://fonts.google.com/specimen/Lexend+Deca");
 }
 
 @font-face {
     font-family: Big Shoulders Display;
     font-weight: 700;
-    src: url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+    src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
 }
 
 /* Box sizing rules */
@@ -79,4 +82,56 @@ button,
 textarea,
 select {
     font: inherit;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.wrapper {
+    width: 920px;
+    height: 500px;
+    display: flex;
+
+}
+
+
+.sedas {
+    background: var(--clr-primary-300);
+
+}
+
+.suvs {
+    background: var(--clr-primary-400);
+}
+
+.luxury {
+    background: var(--clr-primary-500);
+}
+
+
+.card {
+    list-style-type: none;
+    height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+
+.card li {
+    padding-top: 3.125rem;
+
+      }
+
+.paddingButton {
+
+
+
 }
