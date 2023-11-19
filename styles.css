@@ -28,13 +28,13 @@
 @font-face {
     font-family: Lexend Deca;
     font-weight: 250;
-    src: url("/fonts/LexendDeca-VariableFont_wght.ttf");
+    src: url("./fonts/LexendDeca-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: Big Shoulders Display;
     font-weight: 700;
-    src: url("/fonts/BigShouldersDisplay-VariableFont_wght.ttf");
+    src: url("./fonts/BigShouldersDisplay-VariableFont_wght.ttf");
 }
 
 /* Box sizing rules */
