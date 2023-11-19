@@ -9,28 +9,32 @@
     --clr-neutral-200: hsl(0, 0%, 95%);
 
     --fs-body: 15px;
+    --fs-heading: 32px;
 
     --ff-primary: 'Big Shoulders Display', cursive;
     --ff-secondary: 'Lexend Deca', sans-serif;
 
+
+    --button-text-color: #ffffff;
+    --button-hover-background: #0056b3;
+    --button-hover-text-color: #ffffff;
+    --button-padding: 10px 28px;
+    --button-border-radius: 40px;
+    --button-font-size: 16px;
+
 }
 
-@media (min-width: 375px) {
-
-
-
-}
 
 @font-face {
     font-family: Lexend Deca;
-    font-weight: 400;
-    src: url("https://fonts.google.com/specimen/Lexend+Deca");
+    font-weight: 250;
+    src: url("/fonts/LexendDeca-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: Big Shoulders Display;
     font-weight: 700;
-    src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+    src: url("/fonts/BigShouldersDisplay-VariableFont_wght.ttf");
 }
 
 /* Box sizing rules */
@@ -98,40 +102,145 @@ body {
     width: 920px;
     height: 500px;
     display: flex;
+    flex-shrink: 0;
 
 }
 
 
 .sedas {
     background: var(--clr-primary-300);
+    color: var(--clr-primary-300);
 
 }
 
+
 .suvs {
     background: var(--clr-primary-400);
+    color: var(--clr-primary-400);
+    padding-top: 0.5rem;
 }
 
 .luxury {
     background: var(--clr-primary-500);
+    color: var(--clr-primary-500);
+    padding-top: 0.5rem;
+}
+
+.paddingSVG {
+    padding-top: 0.5rem;
+
 }
 
 
 .card {
     list-style-type: none;
     height: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 18%;
+    padding-right: 17%;
 
 }
 
 
-.card li {
-    padding-top: 3.125rem;
+.wrapper h2 {
 
+    font-family: var(--ff-primary);
+    font-size: var(--fs-heading);
+    color: var(--clr-neutral-200);
+}
+
+.wrapper p {
+
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    color: var(--clr-neutral-200);
+
+}
+
+.interline {
+    padding-top: 1.950rem;
       }
 
-.paddingButton {
 
+.interlineButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-right: 18%;
+    padding-left: 17%;
+}
+
+.column {
+    padding-bottom: 11%;
+
+}
+
+.customButtom {
+    font-family: var(--ff-secondary);
+    font-weight: bold;
+    font-size: 14px;
+    background-color: var(--clr-neutral-200);
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+    border: 2px var(--clr-neutral-100) solid;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+
+
+
+.customButtom:hover {
+    background-color: transparent;
+    color: var(--clr-neutral-100);
+}
+
+
+.borderRadiusSedas {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.borderRadiusLuxury {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+
+
+    }
+    .column {
+        padding-bottom: 25%;
+
+    }
+
+    .wrapper {
+        width: 330px;
+        height: 440px;
+        flex-direction: column;
+        flex: 0 0 fit-content;
+
+    }
+    .borderRadiusSedas {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: unset;
+
+    }
+
+    .borderRadiusLuxury {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: unset;
+
+    }
 
 
 }
